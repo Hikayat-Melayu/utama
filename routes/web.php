@@ -17,9 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
 
-Route::domain('{account}.prototype.com.my')->group(function () {
-    Route::get('user/{id}', function ($account, $id) {
-        return view('welcome');
-    });
-});
+require __DIR__.'/auth.php';
+
+require __DIR__.'/apps/demo.php';
+
+
