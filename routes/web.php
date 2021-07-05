@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::domain('{account}.prototype.com.my')->group(function () {
+    Route::get('user/{id}', function ($account, $id) {
+        return view('welcome');
+    });
+});
