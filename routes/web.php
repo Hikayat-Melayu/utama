@@ -25,4 +25,12 @@ require __DIR__.'/auth.php';
 
 require __DIR__.'/apps/demo.php';
 
+require __DIR__.'/apps/bnm-iams.php';
+require __DIR__.'/apps/jakim-sppim.php';
+require __DIR__.'/apps/jpj-awas.php';
+require __DIR__.'/apps/mafi-lesen-rmp.php';
+require __DIR__.'/apps/mohe-ipts.php';
+require __DIR__.'/apps/penjara-marketplace.php';
+require __DIR__.'/apps/tabunghaji-hartanah.php';
+
 
